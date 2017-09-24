@@ -8,7 +8,7 @@ body{
   /* font-family: 'Quicksand', sans-serif;  */
   /* font-family: 'Dosis', sans-serif; */
   font-family: 'Ubuntu', sans-serif; 
-  color: white !important;
+  color: white;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, .8), 1px 1px 1px rgba(0, 0, 0, .8), -1px 1px 1px rgba(0, 0, 0, .8), 1px -1px 1px rgba(0, 0, 0, .8);  
 }
 
@@ -41,8 +41,8 @@ body{
 }
 
 .header {
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 45px;
+  margin-bottom: 10px;
 }
 .titulo {
   margin-bottom: 20px;
@@ -90,7 +90,6 @@ body{
   position: absolute;
   right: -800px;
   background-color: #DFBDDF;
-  margin-top: 30px;
   color: black;
   text-shadow: none;
   display: none;
@@ -243,4 +242,57 @@ body{
   position: absolute;
   z-index: 0;
   top: 0;
+}
+
+@media (max-width: 575px) { 
+  .portada {
+    margin-top: 15px;
+  }  
+
+  .header {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .titulo {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .title-a {
+    font-size: 18px;
+  }
+
+  .frase {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  #social {
+    padding: 0;
+  }
+
+  img.img-fluid {
+    width: 220px;
+  }
+
+  .aboutme, .services, .cliente, .contacto, .formulario {
+    text-align: center;
+  }
+
+  .izquierda {
+    padding: 0;
+  }
+
+  .columnas-texto.derecha {
+    padding-top: 20px;
+  }
+
+  .columnas-texto {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+ 
 }
