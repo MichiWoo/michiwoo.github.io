@@ -20,6 +20,7 @@ const sectionPortada = document.getElementById('portada');
 const btnEnviarForm = document.getElementById('sendForm');
 btnEnviarForm.addEventListener('click', mandarEmail);
 
+
 function mandarEmail() {
     var inpName = document.getElementById('name');
     var name = inpName.value;
@@ -89,12 +90,29 @@ function comprobarMenu(){
 }
 
 function mostrarModalEmail(trueOrFalse) {
-    console.log(trueOrFalse);
+    if (trueOrFalse) {
+        $('#modalEmailEnviado').modal('show');
+        vaciarCampos();
+    } else {
+        mostrarModalErrorEmail();
+    }   
+    
 }
 
 function mostrarModalErrorEmail() {
-    //Mostrar modal
-    console.log('Modal Error Email');
+    $('#modalEmailError').modal('show');
 }
 
+function vaciarCampos() {
+    var inpName = document.getElementById('name');
+    inpName.value = "";
+    
+    var inpEmail = document.getElementById('email');
+    inpEmail.value = "";
 
+    var inpMensaje = document.getElementById('message');
+    inpMensaje.value = "";
+    
+    var inpTelefono = document.getElementById('telefono');
+    inpTelefono.value = "";
+}

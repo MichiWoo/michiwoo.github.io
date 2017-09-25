@@ -54,8 +54,8 @@ body{
 } 
 
 #burger-button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   line-height: 40px;
   border-radius: 50%;
   background: white;
@@ -67,8 +67,8 @@ body{
 }
 
 #burger-buttonDown {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   line-height: 40px;
   border-radius: 50%;
   background: #504083;
@@ -78,8 +78,8 @@ body{
   padding: 0;
   opacity: .8;
   box-shadow: 1px 1px 5px 0px rgba(255,255,255,1);
+  font-size: 30px;
 }
-
 
 
 /* ---- section datos ---- */
@@ -197,7 +197,7 @@ body{
 
 /* ---- Social ---- */
 #social {
-  padding: 20px 0 0 10px;
+  padding: 0;
   /* display: inline-block;
   position: absolute;
   left: 0; */
@@ -243,6 +243,34 @@ body{
 
 
 /* ---- particles.js container ---- */
+.modal-header {
+  background-color: #ddc7f2;
+  color: #410A61;
+}
+.modal-title {
+  text-shadow: initial;
+}
+
+.modal-body {
+  color: #410A61;
+  text-shadow: initial;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: #410A61;
+  border-color: #714898;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.modal-header {
+  border-radius: 20px 20px 0 0;
+}
+
+/* ---- particles.js container ---- */
 
 #particles-js{
   width: 100%;
@@ -263,14 +291,14 @@ body{
   }  
 
   .header {
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 0;
   }
 
   .titulo {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    font-size: 35px;
+    margin-top: 45px;
+    margin-bottom: 35px;
   }
 
   .title-a {
@@ -279,15 +307,13 @@ body{
 
   .frase {
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 35px;
   }
 
   #social {
     padding: 0;
-  }
-
-  img.img-fluid {
-    width: 220px;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   .aboutme, .services, .clientes, .contacto, .formulario {
@@ -316,7 +342,7 @@ body{
 
   img.img-fluid {
     max-width: 100%;
-    height: 100px;
+    height: 125px;
     width: auto;
   }
 
@@ -328,6 +354,4 @@ body{
   .col-sm-12.col-md-3.column-image, .col-sm-12.col-md-4.column-image {
     margin-bottom: 30px;
   }
-
-
 }

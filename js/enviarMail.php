@@ -27,7 +27,7 @@ $cabeceras2 .= "From:" . $email . "\r\n";
             <body>
                 
             <center>
-                <img src="http://www.michiwooweb.esy.es/images/logo michiwoo.png" width="300">
+                <img src="../images/logo-michiwoo.png" width="300">
             
                 <div align="justify" style="background-color:#f8f7f7; color:#646464; width:300px; border-bottom:solid 2px 2px 2px 2px #313131; padding: 10px; font-family:Verdana, Geneva, sans-serif; font-size:14px;">
                     
@@ -52,7 +52,7 @@ $cabeceras2 .= "From:" . $email . "\r\n";
                     </tr>
                     </table>
 
-                    <p><small>Aviso Legal: Este correo ha sido enviado por un sistema automático de envíos. De conformidad con lo establecido en la ley 34/2002 LSSICE le comunicamos que este correo electrónico ha sido enviado por hipotecaes10 S.L. (en adelante <a href="www.hipoteca10.es"><b>Hipoteca10</b></a>) con CIF 687794061. Su dirección electrónica ha sido recabada en el marco de los servicios que fueron solicitados por usted desde la pagina web de Hipoteca10, o vía telefónica y habiendo aceptado los términos y condiciones  y política de privacidad de Hipoteca10. De acuerdo con lo establecido en la LOPD, Hipoteca10 le informa que en el supuesto de que no desee recibiendo mas correos pude darse de baja notificándolo por correo electrónico en la siguiente dirección: <a href="mailto:info@hipoteca10.es">INFO@HIPOTECA10.ES</a>. Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición, mediante petición escrita dirigida al departamento de atención al cliente de Hipoteca10, Carrera San Jerónimo 18, planta 4, oficina 5. Madrid 28014. La solicitud deberá contener los siguientes datos: nombre y apellidos, domicilio a efectos de notificación, fotocopia del DNI, o tarjeta de residencia en vigor, o pasaporte en vigor, que acredite de manera fehaciente su identidad, y petición concreta.</small></p>
+                    <p><small>Aviso Legal: Este correo ha sido enviado por un sistema automático de envíos.</p>
                     <p><small>El contenido de esta comunicación está sujeto al deber de secreto y va dirigido exclusivamente a su destinatario. En el supuesto de que Usted no fuera el destinatario, le pedimos que nos lo indique y no difunda su contenido a terceros, procediendo a su destrucción.</small></p>
                 
 
