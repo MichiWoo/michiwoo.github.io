@@ -340,8 +340,8 @@ body{
     margin-bottom: 20px;
   }
 
-  .img-fluid {
-      width: 75%;
+   img.img-fluid {
+    width: 220px;
   }
   
   .img-fluid.img-tuxpan {
