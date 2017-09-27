@@ -1,12 +1,8 @@
-
-
 body{
   width:100%;
 	height:100%;
   margin: 0;
   background: black;
-  /* font-family: 'Quicksand', sans-serif;  */
-  /* font-family: 'Dosis', sans-serif; */
   font-family: 'Ubuntu', sans-serif; 
   color: white;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, .8), 1px 1px 1px rgba(0, 0, 0, .8), -1px 1px 1px rgba(0, 0, 0, .8), 1px -1px 1px rgba(0, 0, 0, .8);  
@@ -63,24 +59,14 @@ body{
   color: #504083;
   vertical-align: center;
   padding: 0;
+}
+
+#burger-button:hover {
   box-shadow: 3px 3px 10px 0px rgba(255,255,255,1);
-}
-
-#burger-buttonDown {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
   background: #504083;
-  cursor: pointer;
   color: white;
-  vertical-align: center;
-  padding: 0;
-  opacity: .8;
-  box-shadow: 1px 1px 5px 0px rgba(255,255,255,1);
+  opacity: .6;
 }
-
-
 
 /* ---- section datos ---- */
 .datos {
@@ -99,7 +85,6 @@ body{
 #datos .container {
   width: 100%;
 }
-
 
 .datos.active {
   right: 0;
@@ -164,7 +149,6 @@ body{
   border-color: #410A61;
 }
 
-
 .form-control {
   color: #410A61;
   border-color: #5c0d5c80;
@@ -179,12 +163,9 @@ body{
   border-color: #5c0d5c80;
 }
 
-
-
-
 /* ---- Social ---- */
 #social {
-  padding: 20px 0 0 10px;
+  padding: 20px 0 20px 0;
   /* display: inline-block;
   position: absolute;
   left: 0; */
@@ -228,9 +209,7 @@ body{
   text-shadow: -1px -1px 1px rgba(255, 255, 255, .8), 1px 1px 1px rgba(255, 255, 255, .8), -1px 1px 1px rgba(255, 255, 255, .8), 1px -1px 1px rgba(255, 255, 255, .8);
 }
 
-
 /* ---- particles.js container ---- */
-
 #particles-js{
   width: 100%;
   height: 100%;
@@ -270,7 +249,7 @@ body{
   }
 
   #social {
-    padding: 0;
+    padding-bottom: 3vh;
   }
 
   img.img-fluid {
@@ -293,6 +272,4 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
- 
 }
