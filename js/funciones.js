@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('#typed', {
         strings: ['<span class="fa fa-wifi"></span>  Web Developer', '<span class="fa fa-user-o"></span>  Frontend Design', '<span class="fa fa-database"></span>  Backend Basic'],
-        typeSpeed: 0,
+        typeSpeed: 30,
         backSpeed: 0,
         fadeOut: true,
         loop: true

@@ -1,12 +1,8 @@
-
-
 body{
   width:100%;
 	height:100%;
   margin: 0;
   background: black;
-  /* font-family: 'Quicksand', sans-serif;  */
-  /* font-family: 'Dosis', sans-serif; */
   font-family: 'Ubuntu', sans-serif; 
   color: white;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, .8), 1px 1px 1px rgba(0, 0, 0, .8), -1px 1px 1px rgba(0, 0, 0, .8), 1px -1px 1px rgba(0, 0, 0, .8);  
@@ -63,22 +59,12 @@ body{
   color: #504083;
   vertical-align: center;
   padding: 0;
-  box-shadow: 3px 3px 10px 0px rgba(255,255,255,1);
 }
 
-#burger-buttonDown {
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
-  border-radius: 50%;
+#burger-button:hover {
   background: #504083;
-  cursor: pointer;
   color: white;
-  vertical-align: center;
-  padding: 0;
-  opacity: .8;
-  box-shadow: 1px 1px 5px 0px rgba(255,255,255,1);
-  font-size: 30px;
+  box-shadow: 3px 3px 10px 0px rgba(255,255,255,1);
 }
 
 
@@ -99,7 +85,6 @@ body{
 #datos .container {
   width: 100%;
 }
-
 
 .datos.active {
   right: 0;
@@ -194,13 +179,14 @@ body{
   margin-bottom: 10px;
 }
 
+.progress-bar.progress-bar-striped.progress-bar-animated {
+  background-color: #410A61;
+}
+
 
 /* ---- Social ---- */
 #social {
-  padding: 0;
-  /* display: inline-block;
-  position: absolute;
-  left: 0; */
+  padding-bottom: 3vh;
 }
 
 #social .social-item {
@@ -271,7 +257,6 @@ body{
 }
 
 /* ---- particles.js container ---- */
-
 #particles-js{
   width: 100%;
   height: 100%;
