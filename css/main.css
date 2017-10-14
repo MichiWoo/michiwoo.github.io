@@ -1,0 +1,52 @@
+section {
+    padding: 100px 0 100px 0;
+}
+
+#logo {
+    padding-bottom: 30px;
+}
+.carousel {
+    padding: 30px 0 0 0;
+}
+.cards, .card2 {
+    padding: 30px 0 30px 0;
+}
+
+.carousel-caption {
+    background-color: #e2bfd4;
+    color: #940eb6;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: black;
+    text-shadow: 5px 5px white;
+}
+
+#home {
+    background-color: #e2bfd4;
+    height: 500px;
+}
+
+#tipos {
+    background-color: #c778a7;
+}
+
+#logins {
+    background-color: #e2bfd4;
+}
+
+#dashboards {
+    background-color: #c778a7;
+}
+
+.btn-outline-primary {
+    color: white;
+    background-color: rgb(220, 112, 247);
+    border-color: rgb(171, 79, 194);
+}
+
+.btn-outline-primary:hover {
+    color: rgb(171, 79, 194);
+    background-color: #e2bfd4;
+    border-color: rgb(171, 79, 194);
+}
