@@ -1,8 +1,8 @@
 <?php
-    $host_name  = "localhost";
-    $database   = "qxr427";
-    $user_name  = "";
-    $password   = "";
+    $host_name  = "mysql.hostinger.mx";
+    $database   = "u112460988_pwoo";
+    $user_name  = "u112460988_wooad";
+    $password   = "jPzk2RlM4Wv5";
 
     $conexion = mysqli_connect($host_name, $user_name, $password, $database);
     if (mysqli_connect_errno())

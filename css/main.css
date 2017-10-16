@@ -50,3 +50,7 @@ section {
     background-color: #e2bfd4;
     border-color: rgb(171, 79, 194);
 }
+
+.jumbotron.jumbotron-fluid {
+    background-color: #f3daff;
+}

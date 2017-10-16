@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login con Materialize</title>
+    <meta name="description" content="Michiwoo Webs, Login con Bootstrap.">
+    <meta name="author" content="Michel González Morales" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+<body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="./images/logo-michiwoo.png" width="100" alt="Logo Michiwoo Webs"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="login-bootstrap.html">Logo Bootstrap</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <h1>Login con Materialize</h1>
+
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title">Iniciar Sesión</span>
+                          <form>
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="Musuario" type="text" class="validate">
+                                    <label for="Musuario">Nombre</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                    <i class="material-icons prefix">fingerprint</i>
+                                    <input id="Mpassword" type="password" class="validate">
+                                    <label for="Mpassword">Contraseña</label>
+                                  </div>
+                                </div>
+                          </form>
+                        </div>
+                        <div class="card-action">
+                            <button id="submitM" class="btn waves-effect waves-light" type="button" name="action">Enviar
+                                    <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5>Ejemplo:</h5>
+                  <p>Usuario: Admin</p>
+                  <p>Contraseña: madagascar</p>
+            </div>
+        </div>
+   
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      var btnEMaterialize = document.getElementById('submitM')
+      var inpNombreM = document.getElementById('Musuario')
+      var inpContrasenaM = document.getElementById('Mpassword')
+      
+      btnEMaterialize.addEventListener('click', function (){
+          let usuario = inpNombreM.value
+          let pass = inpContrasenaM.value
+        console.log(usuario)
+        console.log(pass)
+
+          validarUsuario(usuario, pass)
+      })
+
+      function validarUsuario(usuario, contrasena) {
+        console.log(usuario)
+        console.log(contrasena)
+        var lusuario= './validate.php?usuario=' + usuario + '&pass=' + contrasena;
+        console.log(lusuario)
+        var validacion = $.getJSON(lusuario, {format: "json"}, function(data) { 
+            console.log(data)
+            if (data.success) {
+                inpNombreM.value = ""
+                inpContrasenaM.value = ""
+                Materialize.toast('El Usuario: ' + data.nombreUsuario + ' se ha identificado Correctamente.', 3000, 'rounded')
+
+            } else {
+                inpNombreM.value = ""
+                inpContrasenaM.value = ""
+                Materialize.toast('Error al entrar, verifique su Usuario y/o Contaseña.', 3000, 'rounded')
+            }
+            
+        })
+    }
+
+    </script>
+</body>
+</html>
