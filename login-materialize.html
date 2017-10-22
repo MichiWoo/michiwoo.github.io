@@ -31,18 +31,24 @@
   
 </head>
 <body>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="./images/logo-michiwoo.png" width="100" alt="Logo Michiwoo Webs"></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="login-bootstrap.html">Logo Bootstrap</a></li>
-                    <li><a href="portafolio.html">Portafolio</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-                </div>
-            </nav>
+        
+  <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img src="./images/logo-michiwoo.png" width="100" alt="Logo Michiwoo Webs"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="login-bootstrap.html">Login Bootstrap</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="login-bootstrap.html">Login Bootstrap</a></li>
+          </ul>
         </div>
+      </nav>
+              
         
         <div class="container">
             <div class="row">
@@ -77,7 +83,7 @@
                     </div>
                   </div>
                   <h5>Ejemplo:</h5>
-                  <p>Usuario: Admin</p>
+                  <p>Usuario: ADMIN</p>
                   <p>Contraseña: madagascar</p>
             </div>
         </div>
@@ -86,6 +92,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
+        
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav()
+    })
+
       var btnEMaterialize = document.getElementById('submitM')
       var inpNombreM = document.getElementById('Musuario')
       var inpContrasenaM = document.getElementById('Mpassword')
@@ -114,7 +125,7 @@
             } else {
                 inpNombreM.value = ""
                 inpContrasenaM.value = ""
-                Materialize.toast('Error al entrar, verifique su Usuario y/o Contaseña.', 3000, 'rounded')
+                Materialize.toast('Error al entrar, verifique su Usuario y/o Contraseña.', 3000, 'rounded')
             }
             
         })

@@ -349,4 +349,13 @@ body{
   .col-sm-12.col-md-3.column-image, .col-sm-12.col-md-4.column-image {
     margin-bottom: 30px;
   }
+
+  #logo {
+    max-width: 100%;
+  }
+
+  .carousel-item img {
+    max-width: 350px;
+    height: 220px;
+  }
 }

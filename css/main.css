@@ -8,6 +8,7 @@ section {
 .carousel {
     padding: 30px 0 0 0;
 }
+
 .cards, .card2 {
     padding: 30px 0 30px 0;
 }
@@ -53,4 +54,21 @@ section {
 
 .jumbotron.jumbotron-fluid {
     background-color: #f3daff;
+}
+
+
+@media (max-width: 575px) {
+ #logo {
+    max-width: 100%;
+  }
+
+  .carousel-item img {
+    max-width: 350px;
+    height: 220px;
+  }
+
+  .cards .row {
+      margin-right: 0;
+      margin-left: 0;
+  }
 }
